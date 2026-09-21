@@ -14,7 +14,7 @@ import { readFileSync } from "node:fs";
 let driver = "d1";
 try {
   // The built config is plain JSON (no comments) — read the active driver.
-  const cfg = JSON.parse(readFileSync("dist/shortlink/wrangler.json", "utf8"));
+  const cfg = JSON.parse(readFileSync("dist/myshortlinkce/wrangler.json", "utf8"));
   driver = cfg.vars?.DB_DRIVER ?? driver;
 } catch {
   // No built config available — assume the D1 default.
