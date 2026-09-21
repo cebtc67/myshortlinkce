@@ -17,7 +17,7 @@
 // on the same Cloudflare account as the Worker — see docs/CUSTOM-DOMAINS.md.
 import { readFileSync, writeFileSync } from "node:fs";
 
-const path = "dist/shortlink/wrangler.json";
+const path = "dist/myshortlinkce/wrangler.json";
 let cfg;
 try {
   cfg = JSON.parse(readFileSync(path, "utf8"));
